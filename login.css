@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: #0074e4;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+.reg-log {
+    width: 340px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 130px;
+    box-shadow:  0px 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    animation-name: opacity;
+    animation-duration: 1s;
+}
+.section1 {
+    width: 50%;
+    text-align: center;
+}
+.section2 {
+    width: 50%;
+    text-align: center;
+}
+.section2 button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: .3s;
+    animation-name: opacity;
+    animation-duration: 3s;
+    cursor: pointer;
+    background-color: #0074e4;
+    border: none;
+    color: #ffffff;
+}
+.section1 button:hover {
+    cursor: pointer;
+    background-color: #0074e4;
+    border: none;
+    color: #ffffff;
+}
+.section1 a {
+    text-decoration: none;
+}
+.section1 button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #0074e4;
+    border: 1px solid #0074e4;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: .3s;
+    animation-name: opacity;
+    animation-duration: 3s;
+}
+.section2 button:hover {
+    cursor: pointer;
+    background-color: #0074e4;
+    border: none;
+    color: #ffffff;
+}
+.section2 a {
+    text-decoration: none;
+}
+
+.wrapper {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    height: 400px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow:  0px 0px 20px;
+    animation-name: opacity;
+    animation-duration: 1s;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #0074e4;
+    font-family: 'Bebas Neue', sans-serif;
+    transition: .3s;
+    animation-name: opacity;
+    animation-duration: 2s;
+}
+h1:hover {
+    letter-spacing: 5px;
+}
+
+
+.email {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    color: #0074e4;
+    animation-name: opacity;
+    animation-duration: 3s;
+}
+.email input {
+    margin-top: 8px;
+    width: 80%;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #0074e4;
+    color: #0074e4;
+    transition: .3s;
+    padding-left: 10px;
+}
+.email p {
+    margin-right: 200px;
+}
+.email input:focus {
+    outline: none;
+    border-radius: 9px;
+    transform: scale(1.1);
+}
+.email input:hover {
+    background-color: #deefff;
+}
+
+
+.password {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    color: #0074e4;
+    animation-name: opacity;
+    animation-duration: 3s;
+}
+.password input {
+    margin-top: 8px;
+    width: 80%;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #0074e4;
+    color: #0074e4;
+    transition: .3s;
+    padding-left: 10px;
+}
+.password p {
+    margin-right: 180px;
+}
+.password input:focus {
+    outline: none;
+    border-radius: 9px;
+    transform: scale(1.1);
+}
+.password input:hover {
+    background-color: #deefff;
+}
+
+
+.submit {
+    text-align: center;
+    justify-content: center;
+    animation-name: opacity;
+    animation-duration: 4s;
+}
+.submitbtn {
+    margin-top: 30px;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #0074e4;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #0074e4;
+    transition: .5s;
+}
+.submitbtn:hover {
+    cursor: pointer;
+    background-color: #0074e4;
+    border: #ffffff;
+    color: #ffffff;
+}
+
+
+
+@keyframes opacity {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}

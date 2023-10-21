@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Vito's Login</title>
+<body>
+    <div class="reg-log">
+        <div class="section1">
+            <a href="/index.html"><button>Register</button></a>
+        </div>
+        <div class="section2">
+            <a href="/login.html"><button class="active">Login</button></a>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <h1>LOGIN</h1>
+        <div class="email">
+            <p>Email:</p>
+            <input type="email" id="emailinp" required>
+        </div>
+        <div class="password">
+            <p>Password:</p>
+            <input type="password" id="passwordinp" required>
+        </div>
+        <div class="submit">
+            <input type="submit" class="submitbtn" onclick="submitform()">
+        </div>
+    </div>
+
+    <script>
+        emailInput = document.getElementById("emailinp");
+        passwordInput = document.getElementById("passwordinp");
+
+        function submitform(){
+            var email = emailInput.value
+            var pass = passwordInput.value
+            var accs = JSON.parse(localStorage.getItem('accounts'));
+
+
+            var isLoged = accs.some(function(accounts) {
+                if (accounts[1] === email & accounts[2] === pass){
+                    return true
+                }
+            })
+
+            if (isLoged){
+                alert("Succesfully Logged")
+            } else {
+                alert("Email or Password might be Wrong!!")
+            }
+        }
+
+    </script>
+</body>
+</html>
